@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Calculator</title>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Love Calculator</h1>
+        <div>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_N1zUrn.json" background="transparent"
+                speed="1" style="width: auto; height: 200px;" autoplay></lottie-player>
+        </div>
+        <p>Masukkan Nama Kamu dan Dia</p>
+    </header>
+    <div>
+        <section class="kalkulator">
+            <form>
+                <div class="nama">
+                    <label for="nama1">Nama Kamu</label><br>
+                    <input type="text" id="nama1">
+                </div>
+                <div class="img-love">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jhEt7A.json"
+                        background="transparent" speed="1" style="width: 100px; height: 100px;" hover loop
+                        autoplay></lottie-player>
+                </div>
+                <div class="nama">
+                    <label for="nama2">Nama Dia</label><br>
+                    <input type="text" id="nama2">
+                </div>
+            </form>
+            <a href="#" class="btn">Hitung</a>
+        </section>
+        <section class="hasil">
+            <h1>Hasil</h1>
+            <div class="container-hasil">
+                <h1 id="nm1">nama1</h1>
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_t9amg50m.json"
+                        background="transparent" speed="1" style="width: auto; height: auto;" loop
+                        autoplay id="love-bawah"></lottie-player>
+                <h1 id="nm2">nama2</h1>
+                <h2 id="persentase">80%</h2>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 - M.Rendi Alamsyah</p>
+        </footer>
+    </div>
 </body>
+
 </html>
