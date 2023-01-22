@@ -131,11 +131,11 @@ footer {
     }
     .container-hasil h2 {
         position: absolute;
-        left: 45%;
+        left: 44%;
         right: 45%;
-        top: 42%;
+        top: 43%;
         bottom: 49%;
         color: white;
-        font-size: 25px;
+        font-size: 18px;
     }
 }
