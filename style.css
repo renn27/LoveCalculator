@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Pacifico&family=Roboto&display=swap');
+body {
+    background-image: url("https://img.freepik.com/free-photo/paper-valentines-day-hearts-pink_1220-3681.jpg");
+    background-size: cover;
+    font-family: 'Love Ya Like A Sister';
+}
+
+header {
+    
+    text-align: center;
+}
+.kalkulator {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.nama {
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    background: #ffcbd1;
+    padding: 10px;
+    box-shadow: 0px 0px 15px white;
+}
+.img-love {
+    display: inline-block;
+}
+
+input {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Love Ya Like A Sister';
+
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #ff5b6e;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f83047;
+    transform: scale(1.5);
+}
+
+.hasil {
+    display:none; 
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.container-hasil {
+    display:flex;
+    align-items: center;
+}
+
+.container-hasil #nm1 {
+    position: absolute ;
+    right:70%;
+    text-transform:uppercase;
+    z-index: 2;
+    background-color: #ffcbd1;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+}
+
+.container-hasil #nm2 {
+    position: absolute ;
+    left:70%;
+    text-transform:uppercase;
+    z-index: 2;
+    background-color: #ffcbd1;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+}
+
+.container-hasil h2 {
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    color: white;
+}
+
+#h1, #h2, #love-bawah {
+    flex: 1;
+} 
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 13px;
+}
+
+@media screen and (max-width:480px) {
+    form {
+        display: block;
+    }
+    .nama {
+        display: block;
+    }
+    .container-hasil {
+        display: block;
+        position: relative;
+    }
+    .container-hasil #nm1, .container-hasil #nm2 {
+        position: static;
+    }
+    .container-hasil h2 {
+        position: absolute;
+        left: 45%;
+        right: 45%;
+        top: 42%;
+        bottom: 49%;
+        color: white;
+        font-size: 25px;
+    }
+}
