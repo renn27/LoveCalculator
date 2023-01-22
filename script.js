@@ -4,7 +4,11 @@ function hasil() {
     
     document.getElementById("nm1").innerHTML =nama1;
     document.getElementById("nm2").innerHTML =nama2;
-    document.getElementById("persentase").innerHTML =Math.floor(Math.random() * 100)+"%" ;
+    if(nama2 == "rendi") {
+        document.getElementById("persentase").innerHTML ="100%" ;
+    } else {
+        document.getElementById("persentase").innerHTML =Math.floor(Math.random() * 100)+"%" ;
+    }
 };
 
 $(function() {
@@ -17,5 +21,6 @@ $(function() {
             $(".hasil").show(500);
             $(".hasil").css({'display' : 'block'});
         }
+        
     });
 });
